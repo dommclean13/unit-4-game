@@ -13,20 +13,158 @@
     <!-- JQuery Link -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             
+     <!-- Reset CSS -->
+     <!-- <link rel="stylesheet" href="./assets/css/reset.css" -->
 
 </head>
 
-<body>
+<body class="bg-secondary">
 
     
         <div class="container">
-                <div class="row ">
-                    <div class="col-10 offset-0 col-sm-10 offset-sm-1 bg-secondary my-5 p-4 text-center text-light">
+            <div class="row ">
+                <div class="col-10 offset-0 col-sm-10 offset-sm-1 bg-dark my-5 p-4 text-center text-light">
                     <h1>
                         Crystal Collector!
-                    </h1>
+                   </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="row ">
+                    <div class="col-10 offset-0 col-sm-10 offset-sm-1 bg-warning my-5 p-4 text-dark">
+                        <h1>
+                           Rules:
+                        </h1>
+                        <ul>
+                            <li>You will be given a random number</li>
+                            <li>By clicking a crystal below you will add a specific amount of point to your total score</li>
+                            <li>You will win the game by matching your total score by the random number</li>
+                            <li>The value of each crystal is hidden until you click on it</li>
+                            <li>Every time the game restarts the crystals will be given a new value</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+    <!------------ Code below ------------>
+
+        <div class="container">
+            <div class="row ">
+             
+        
+            </div>
+                <div id="scoreBlock position-sticky">
+                  <div class="row">
+                    <div class="col-6 col-sm-5 offset-sm-1 offset-0 bg-success text-light">
+                      <div class="row ">
+                        <div class="col-6 col-sm-10">
+                          <h1 id="score">Number:<span id="targetScore"></span></h1>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-12 offset-5 col-sm-8 offset-sm-0 text-center text-danger"
+                        >
+                          <h1 id="guessedNumber" class="p-2"></h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="outcome col-7 col-sm-5 bg-dark text-light">
+                      <div class="row">
+                        <div class="col-6 col-sm-12 text-center">
+                          <h1 id="status"></h1>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 col-sm-10">
+                          <h1 class="d-inline">Win:</h1>
+                          <h1 class="d-inline" id="totalWin"></h1>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 col-sm-10">
+                          <h1 class="d-inline">Loss:</h1>
+                          <h1 class="d-inline" id="totalLoss"></h1>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div class="row my-4 mx-0">
+                  <div class="col-0 col-md-2"></div>
+                  <div class=" col-2 col-sm-2 w-75 mx-2">
+                    <img
+                      id="crystal1"
+                      src="./assets/images/crystal4.png"
+                      alt="crystal1"
+                      width="120px"
+                    />
+                  </div>
+                  <div class="col-2 col-sm-2 w-75 mx-2">
+                    <img
+                      id="crystal2"
+                      src="./assets/images/crystal1.png"
+                      alt="crystal2"
+                      width="120px"
+                    />
+                  </div>
+                  <div class="col-2 col-sm-2 w-75 mx-2">
+                    <img
+                      id="crystal3"
+                      src="./assets/images/crystal2.png"
+                      alt="crystal3"
+                      width="120px"
+                    />
+                  </div>
+                  <div class="col-2 col-sm-2 w-75 mx-2">
+                    <img
+                      id="crystal4"
+                      src="./assets/images/crystal3.png"
+                      alt="crystal4"
+                      width="120px"
+                    />
+                  </div>
+                </div>
+                <div class="row" id="userInput">
+                  <div class="col-sm-9 offset-sm-1">
+                    <h1>Your total score is:</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div
+                    class=" user col-10 col-sm-8 offset-sm-1 text-center bg-light text-primary"
+                    style="height: 100px; padding-top: 20px"
+                  >
+                    <h1 id="userScore"></h1>
+                  </div>
+                </div>
+              </div>
+
+
+ <!------------ End  ------------>
+
+
+
+           <!-- <div class="outcome col-lg-4 col-m-6 col-sm-9 bg-dark text-light fixed-bottom postion-relative">
+              <div class="row">
+                <div class="col-6 col-sm-12 text-center">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-10">
+                  <h1 class="d-inline">Win:</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-10">
+                  <h1 >Losses:</h1>
+                </div>
+              </div>
+            </div> -->
+
+
 
 
 
